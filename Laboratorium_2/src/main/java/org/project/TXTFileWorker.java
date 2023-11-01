@@ -1,10 +1,9 @@
 package org.project;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * This class provides functionality for working with TXT files.
@@ -13,7 +12,7 @@ import java.util.Arrays;
 public class TXTFileWorker {
 
     /**
-     * Metoda odczytuje plik txt i tworzy z niego tablicę typu String[].
+     * Reads the TXT file and creates String Array storing data
      *
      * @param filename the name of the TXT file
      * @throws IOException if an I/O error occurs
@@ -42,4 +41,28 @@ public class TXTFileWorker {
 
     }
 
+    /**
+     * Writes TXT file with output data
+     *
+     * @param project_list HashMap<String, ArrayList<String>> projects list with matched programmers
+     */
+
+    public static void Write2File(HashMap<String, ArrayList<String>> project_list) {
+
+        try {
+            FileWriter filewriter = new FileWriter("output.txt");
+            BufferedWriter writer = new BufferedWriter(filewriter);
+
+            for (String key : project_list.keySet()) {
+
+                writer.write(key + ": " + project_list.get(key));
+                writer.newLine();
+            }
+
+            writer.close();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

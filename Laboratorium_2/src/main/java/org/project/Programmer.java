@@ -17,10 +17,6 @@ public class Programmer {
      */
     public ArrayList<String> roles;
     /**
-     * True if employee is a PM or QA; default is false
-     */
-    public boolean leader = false;
-    /**
      * Number of projects the person is involved in
      */
     int number_of_projects = 0;
@@ -29,35 +25,34 @@ public class Programmer {
 
         this.id = id;
         this.roles = roles;
-        for (String e : roles) {
-            if (e.equals("QA") || e.equals("PM")) {
-                this.leader = true;
-                break;
-            }
-        }
+
     }
 
     /**
-     * Metoda zwraca prawdę, jeśli programista może pracować nad projektem, ponieważ ma mniej niż 1 projekt
-     * lub ma już 1 projekt, ale jest QA lub PM
+     * Returns true when programmer can work on a project, because they aren't already involved in any,
+     * or they are involved in project, but are QA or PM
      *
-     * @return Boolean czy programista może wziąć projekt czy nie
+     * @return Boolean informing whether the programmer is already busy
      */
 
-    public boolean CheckIfAvailable() {
+    public boolean CheckIfAvailable(String role) {
 
-        return (this.number_of_projects < 2 && this.leader) || (this.number_of_projects < 1);
+        return ((this.number_of_projects == 1 && (role.equals("QA") || role.equals("PM"))) || (this.number_of_projects < 1) || (this.number_of_projects == 1 && this.roles.contains("P")));
 
     }
 
     /**
-     * Metoda zwiększa ilość projektów w obiekcie progrmiatsa i zwraca id progrmaisty
-     * @return id do wpisania w listę projektów z dopasowanymi pracownikami
+     * Increases number of projects programmer is involved in and returns their id
+     *
+     * @return id to put in projects list
      */
 
-    public String SignUpForProject() {
+    public String SignUpForProject(String role) {
 
         ++this.number_of_projects;
+        if (role.equals("QA") || role.equals("PM"))
+            this.roles.add("P");
+
         return this.id;
 
     }

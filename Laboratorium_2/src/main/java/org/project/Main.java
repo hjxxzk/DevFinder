@@ -12,15 +12,15 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        String filename = "/C:/Users/agnie/IdeaProjects/Laboratorium_2/Laboratorium_2/src/main/resources/data.txt/";    //wczytanie nazwy pliku
+        String filename = "C:/Users/agnie/IdeaProjects/Laboratorium_2/Laboratorium_2/src/main/resources/data.txt";    //taking the file path
         String[] data;
 
-        data = TXTFileWorker.ReadFile(filename); //odczyt z pliku
+        data = TXTFileWorker.ReadFile(filename); //reading the file
 
         int position = 0;
         int end = 0;
 
-        for (String s : data) {     //ustalenie, gdzie zaczyna się sekcja "STAFF"
+        for (String s : data) {     //finding the position of "STAFF" element to slice data array
 
             ++end;
             if (s.equals("STAFF")) {
@@ -29,23 +29,16 @@ public class Main {
 
         }
 
-        HashMap<String, ArrayList<String>> project_list = ProjectList.MakeAList(Arrays.copyOfRange(data, 1, position - 2)); //tworzenie hashmapy, przesyłając do metody jedynie część "PROJECTS"
-        ArrayList<Programmer> dev_list = ProjectList.MakeADevList(Arrays.copyOfRange(data, position, end)); //tworzenie hashmapy, przesyłając do metody jedynie część "STAFF"
+        HashMap<String, ArrayList<String>> project_list = ProjectList.MakeAList(Arrays.copyOfRange(data, 1, position - 2)); //creating a hashmap containing list of projects
+        ArrayList<Programmer> dev_list = ProjectList.MakeADevList(Arrays.copyOfRange(data, position, end)); //creating an arraylist containing list of programmers
 
-        for (String key : project_list.keySet()) {      //Wyświetlanie w konsoli
-            System.out.print(key + " ");
-            ArrayList<String> projectLanguages = project_list.get(key);
-            for (String language : projectLanguages) {
-                System.out.print(language + " ");
-            }
-            System.out.println();
-        }
+        OutputDisplay.Display(project_list); //displaying data
+        OutputDisplay.DevDisplay(dev_list);
 
-        for (Programmer s : dev_list) {
-            System.out.println(s.id + " " + s.roles);
-        }
-
-        SigningUp.FindAProject(project_list, dev_list); //dopasywanie pracownika do projektu
-
+        SigningUp.FindAProject(project_list, dev_list); //matching programmers to their projects
+        OutputDisplay.Display(project_list); //displaying data
+        TXTFileWorker.Write2File(project_list); //creating output file
     }
+
+
 }

@@ -11,13 +11,10 @@ import java.util.HashMap;
 public class ProjectList {
 
     /**
-     * Metoda tworzy HashMapę z listą projektów na podstawie tablicy typu String: HashMap<String, ArrayList<String>>
-     *                                                                       np.  HashMap<"P1", ArrayList<[JAVA, JAVA, QA, PM]>>
-     *                                                                            HashMap<"P2", ArrayList<[PYTHON, QA, PM]>>
-     *                                                                            itd.
+     * Creates a HashMap containing list of projects based on a String array
      *
-     * @param data tablica typu String[], na podstawie któej tworzona jest lista projektów
-     * @return project_list zwracana HashMapa
+     * @param data String Array containing data about projects
+     * @return project_list HashMap<String - project id, ArrayList<String - employees needed>> e.g. HashMap<"P1", ArrayList<[JAVA, JAVA, QA, PM]>>, HashMap<"P2", ArrayList<[PYTHON, QA, PM]>> etc.
      */
     public static HashMap<String, ArrayList<String>> MakeAList(String[] data) {
 
@@ -34,10 +31,8 @@ public class ProjectList {
             for (j = i + 1; j < data.length && !(data[j].contains(":")); j++) {
                 languages.add(data[j]);
             }
-
                 project_list.put(data[i].replace(":",""), languages);
                 i = j - 1;
-
         }
 
         return project_list;
@@ -45,10 +40,10 @@ public class ProjectList {
     }
 
     /**
-     * Metoda tworzy ArrayListę z listą obiektów klasy Programmer na podstawie tablicy typu String: ArrayList<Programmer>
+     * Creates an ArrayList containing Programmer objects, storing data about employees and roles they can act as in project
      *
-     * @param data tablica typu String[], na podstawie któej tworzona jest lista projektów
-     * @return dev_list zwracana ArrayLista programistów
+     * @param data  String Array containing data about programmers
+     * @return dev_list ArrayList<Programmer> e.g. <"R1", [JAVA], 0>, <"R2", [ANGULAR, QA], 0> etc.
      */
 
     public static ArrayList<Programmer> MakeADevList(String[] data)  {
@@ -63,11 +58,8 @@ public class ProjectList {
             for (j = i + 1; j < data.length && !(data[j].contains(":")); j++) {
                 languages.add(data[j]);
             }
-
             dev_list.add(new Programmer(data[i].replace(":",""), languages));
-
             i = j - 1;
-
         }
 
         return dev_list;
