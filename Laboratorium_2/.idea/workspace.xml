@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c0372a8f-47df-4d62-b934-abbd79ecaa06" name="Changes" comment="Komentarze">
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/project/OutputDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/project/OutputDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/project/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/project/Programmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/project/ProjectList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/project/SigningUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/project/SigningUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/project/TXTFileWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/project/TXTFileWorker.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Laboratorium_2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Laboratorium_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Laboratorium_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Wv9GoWjcgHRfpzuq0wwHJ9ENcz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/agnie/Desktop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.project.Main" />
+      <module name="Laboratorium_2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Laboratorium_2 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.Laboratorium_2 [jar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0372a8f-47df-4d62-b934-abbd79ecaa06" name="Changes" comment="" />
+      <created>1697602093796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697602093796</updated>
+      <workItem from="1697602094790" duration="150000" />
+      <workItem from="1697924096848" duration="649000" />
+      <workItem from="1698060665570" duration="337000" />
+      <workItem from="1698253183989" duration="13343000" />
+      <workItem from="1698428635709" duration="12199000" />
+      <workItem from="1698479826161" duration="2550000" />
+      <workItem from="1698495889816" duration="3370000" />
+      <workItem from="1698511217526" duration="3073000" />
+      <workItem from="1698564691390" duration="3350000" />
+      <workItem from="1698570717786" duration="6239000" />
+      <workItem from="1698576976908" duration="152000" />
+      <workItem from="1698588689309" duration="345000" />
+      <workItem from="1698616823302" duration="13000" />
+      <workItem from="1698617121009" duration="1857000" />
+      <workItem from="1698619409849" duration="1053000" />
+      <workItem from="1698857160664" duration="2624000" />
+      <workItem from="1698871738899" duration="1798000" />
+      <workItem from="1698936410832" duration="1007000" />
+      <workItem from="1698950314289" duration="5622000" />
+      <workItem from="1698958875673" duration="92000" />
+      <workItem from="1699008841975" duration="7709000" />
+      <workItem from="1699086565458" duration="9426000" />
+      <workItem from="1699133381222" duration="1508000" />
+      <workItem from="1699135226714" duration="1537000" />
+      <workItem from="1699138558554" duration="2164000" />
+    </task>
+    <task id="LOCAL-00001" summary="Odczyt, Wrzucenie do ArrayListy i Hashmapy, klasa Programmer">
+      <created>1698442564027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698442564027</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Komentarze">
+      <created>1698481908853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698481908853</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Odczyt, Wrzucenie do ArrayListy i Hashmapy, klasa Programmer" />
+    <MESSAGE value="Komentarze" />
+    <option name="LAST_COMMIT_MESSAGE" value="Komentarze" />
+  </component>
+</project>
