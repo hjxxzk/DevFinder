@@ -15,16 +15,12 @@ public class OutputDisplay {
 
     public static void Display(HashMap<String, ArrayList<String>> projectList) {
 
-        for (String key : projectList.keySet()) {
-
+         projectList.forEach((key, value) -> {
             System.out.print(key + " ");
-            ArrayList<String> projectLanguages = projectList.get(key);
-
-            for (String language : projectLanguages) {
-                System.out.print(language + " ");
-            }
+            value.forEach(language -> System.out.print(language + " "));
             System.out.println();
-        }
+        });
+
         System.out.println();
     }
 
@@ -34,9 +30,8 @@ public class OutputDisplay {
 
     public static void DevDisplay(ArrayList<Programmer> devList) {
 
-        for (Programmer s : devList) {
-            System.out.println(s.id + " " + s.roles);
-        }
+         devList
+                .forEach(programmer -> System.out.println(programmer.id + " " + programmer.roles));
         System.out.println();
 
     }
