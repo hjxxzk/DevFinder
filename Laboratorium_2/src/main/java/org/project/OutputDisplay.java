@@ -15,7 +15,7 @@ public class OutputDisplay {
 
     public static void Display(HashMap<String, ArrayList<String>> projectList) {
 
-         projectList.forEach((key, value) -> {
+        projectList.forEach((key, value) -> {
             System.out.print(key + " ");
             value.forEach(language -> System.out.print(language + " "));
             System.out.println();
@@ -30,7 +30,7 @@ public class OutputDisplay {
 
     public static void DevDisplay(ArrayList<Programmer> devList) {
 
-         devList
+        devList
                 .forEach(programmer -> System.out.println(programmer.id + " " + programmer.roles));
         System.out.println();
 

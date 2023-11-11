@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class Main {
 
-    public static String Role1;             //Do zrobienia:     1. Wpakowanie programu do Jar   (opcjonalnie) 2. Użyć JAVA stream API w programie
+    public static String Role1;
     public static String Role2;
 
     public static void main(String[] args) {   //arg[0] -> file path, arg[1] -> role able to work on two projects (QA), arg[2] -> role able to work on two projects (PM)
