@@ -37,7 +37,7 @@ public class Programmer {
 
     public boolean CheckIfAvailable(String role) {
 
-        return ((this.numberOfProjects == 1 && (role.equals(Main.Role1) || role.equals(Main.Role2)))
+        return ((this.numberOfProjects == 1 && (role.equals("QA") || role.equals("PM")))
                 || (this.numberOfProjects < 1));
 
     }

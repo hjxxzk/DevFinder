@@ -105,14 +105,14 @@ public class TXTFileWorker {
 
     public static void SetOrder(ArrayList<String> languages)    {
 
-            if (languages.contains(Main.Role2))    {
-                Collections.swap(languages, languages.indexOf(Main.Role2), languages.size() - 1);
+            if (languages.contains("QA"))    {
+                Collections.swap(languages, languages.indexOf("QA"), languages.size() - 1);
 
-                if (languages.contains(Main.Role1))
-                    Collections.swap(languages, languages.indexOf(Main.Role1), languages.size() - 2);
+                if (languages.contains("PM"))
+                    Collections.swap(languages, languages.indexOf("PM"), languages.size() - 2);
 
-            }   else if (languages.contains(Main.Role1)) {
-                Collections.swap(languages, languages.indexOf(Main.Role1), languages.size() - 1);
+            }   else if (languages.contains("PM")) {
+                Collections.swap(languages, languages.indexOf("PM"), languages.size() - 1);
             }
     }
 
@@ -127,7 +127,7 @@ public class TXTFileWorker {
     public static void Write2File(HashMap<String, ArrayList<String>> projectList) {
 
         try {
-            FileWriter filewriter = new FileWriter("output.txt");
+            FileWriter filewriter = new FileWriter("Output.txt");
             BufferedWriter writer = new BufferedWriter(filewriter);
 
             for (String key : projectList.keySet()) {

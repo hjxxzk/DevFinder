@@ -7,15 +7,9 @@ import java.util.HashMap;
  * Main class
  */
 public class Main {
-
-    public static String Role1;
-    public static String Role2;
-
-    public static void main(String[] args) {   //arg[0] -> file path, arg[1] -> role able to work on two projects (QA), arg[2] -> role able to work on two projects (PM)
+    public static void main(String[] args) {   //arg[0] -> file path
 
         String filename = args[0];    //taking the file path
-        Role1 = args[1];
-        Role2 = args[2];
 
         ArrayList<String> data = TXTFileWorker.ReadFile(filename); //reading the file
 
