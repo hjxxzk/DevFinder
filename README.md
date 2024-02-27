@@ -1,5 +1,9 @@
+## Opis
+
+## Uruchamianie
 Aplikacja DevFinder przujmuje jako argument wejściowy ścieżkę do pliku txt zawierającą listy projektów i programistów w poniższym formacie:
 
+## Format pliku wejściowego
 PROJECTS
 P1: JAVA JAVA QA PM
 P2: PYTHON QA PM
